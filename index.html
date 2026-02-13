@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Semino | Catálogo Mestre</title>
+    <title>Rafael Semino | Portfólio</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;700;900&family=Lora:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
@@ -160,7 +160,8 @@
             color: var(--black);
             position: sticky;
             top: 100px;
-            height: calc(100vh - 200px);
+            height: 100%;
+            min-height: 400px;
             text-transform: uppercase;
             transition: all 0.4s var(--ease);
             cursor: default;
@@ -198,7 +199,7 @@
 
         .card-img {
             width: 100%;
-            height: 320px;
+            height: 640px;
             background: var(--gray);
             overflow: hidden;
             position: relative;
@@ -445,7 +446,7 @@
 
         .img-stack img {
             width: 100%;
-            height: 200px;
+            height: 400px;
             object-fit: cover;
             filter: grayscale(1) contrast(1.2);
             transition: filter 0.3s;
@@ -548,7 +549,7 @@
             margin-top: 15px;
         }
 
-        .project-meta p + p {
+        .project-meta p+p {
             margin-top: 10px;
         }
 
@@ -556,10 +557,12 @@
             margin-top: 10px;
             font-size: 2rem;
         }
+
         .course-details {
             margin-top: 15px;
         }
-        .course-details + .course-details {
+
+        .course-details+.course-details {
             margin-top: 10px;
         }
 
@@ -567,13 +570,16 @@
             background: var(--red);
             color: white;
         }
+
         .av-title {
             font-size: 2.5rem;
             margin-top: 20px;
         }
+
         .av-project-box {
             margin-top: 30px;
         }
+
         .av-project-title {
             font-family: 'Archivo Black', sans-serif;
             font-size: 1.5rem;
@@ -626,7 +632,7 @@
 
 
         .img-stack .img-stack-item--fixed-height {
-            height: 300px;
+            height: 600px;
         }
 
 
@@ -636,6 +642,7 @@
         .img-stack--cols-2 {
             grid-template-columns: repeat(2, 1fr);
         }
+
         .img-stack--cols-3 {
             grid-template-columns: repeat(3, 1fr);
         }
@@ -652,8 +659,13 @@
         }
 
 
-        .gap-80 { gap: 80px; }
-        .gap-60 { gap: 60px; }
+        .gap-80 {
+            gap: 80px;
+        }
+
+        .gap-60 {
+            gap: 60px;
+        }
 
 
         .section-subtitle {
@@ -763,6 +775,67 @@
             margin-bottom: 30px;
         }
 
+        /* Tighten Eixos Section */
+        #eixos {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        #eixos .section-label {
+            height: auto;
+        }
+
+        .ator-destaque-box p {
+            color: white !important;
+        }
+
+        .btn-work {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: var(--red);
+            color: white;
+            text-decoration: none;
+            font-family: 'Archivo Black', sans-serif;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            transition: all 0.3s var(--ease);
+            border: 2px solid var(--red);
+        }
+
+        .btn-work:hover {
+            background: var(--white);
+            color: var(--black);
+            box-shadow: 8px 8px 0px var(--red);
+            transform: translate(-4px, -4px);
+        }
+
+        .ator-destaque-box p {
+            color: white !important;
+        }
+
+        .btn-work {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: var(--red);
+            color: white;
+            text-decoration: none;
+            font-family: 'Archivo Black', sans-serif;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            transition: all 0.3s var(--ease);
+            border: 2px solid var(--red);
+        }
+
+        .btn-work:hover {
+            background: var(--white);
+            color: var(--black);
+            box-shadow: 8px 8px 0px var(--red);
+            transform: translate(-4px, -4px);
+        }
     </style>
 </head>
 
@@ -771,34 +844,31 @@
     <div class="noise no-print"></div>
 
     <div class="page-wrapper">
-        <header class="no-print">
-            <div class="brand">
-                <h1>RAFAEL<br>SEMINO</h1>
-                <p>CATÁLOGO MESTRE V4.0 • 2026</p>
-            </div>
-            <div class="nav-meta">
-                ATOR / DIRETOR / DRAMATURGO / PROFESSOR / PESQUISADOR<br>
-                PORTFÓLIO CONSOLIDADO • FORTALEZA - CE - BRASIL<br>
-                seminorafael5@gmail.com • @coletivofarolnovo
-            </div>
-        </header>
-
         <section class="hero visible"
-            style="background: url('images/portfolio_rafael/page_1_img_1.jpeg') center/cover no-repeat; min-height: 80vh; position: relative; border-bottom: 10px solid var(--black); display: flex; flex-direction: column; justify-content: flex-end;">
+            style="background: url('images/portfolio_rafael/page_1_img_1.jpeg') center/cover no-repeat; min-height: 90vh; position: relative; border-bottom: 10px solid var(--black); display: flex; flex-direction: column; justify-content: flex-end;">
             <div
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%);">
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 100%);">
             </div>
-            <div style="position: relative; z-index: 1;">
+
+            <div
+                style="position: absolute; top: 40px; right: 60px; z-index: 2; text-align: right; color: rgba(255,255,255,0.8); font-size: 0.9rem; letter-spacing: 2px;">
+                seminorafael5@gmail.com • @coletivofarolnovo<br>
+                FORTALEZA - CE - BRASIL
+            </div>
+
+            <div style="position: relative; z-index: 1; padding: 60px;">
                 <div class="hero-text">
-                    <h2 style="font-size: 12vw; color: white;">RAFAEL<br><span>SEMINO</span></h2>
+                    <p
+                        style="color: var(--red); font-family: 'Archivo Black', sans-serif; font-size: 1.2rem; letter-spacing: 5px; margin-bottom: 10px;">
+                        PORTFÓLIO</p>
+                    <h2 style="font-size: 15vw; color: white; line-height: 0.85;">RAFAEL<br><span>SEMINO</span></h2>
                 </div>
                 <div class="hero-bio"
-                    style="border-left: 10px solid var(--red); padding: 20px 40px; margin-bottom: 60px; background: rgba(0,0,0,0.5); backdrop-filter: blur(5px);">
-                    <p style="font-size: 2.5rem; font-weight: 900; line-height: 1; color: white;">Ator, diretor,
-                        dramaturgo, professor e pesquisador em Artes Cênicas.</p>
+                    style="border-left: 10px solid var(--red); padding: 20px 40px; margin-top: 40px; background: rgba(0,0,0,0.5); backdrop-filter: blur(5px); max-width: 800px;">
                     <p
-                        style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 4px; color: var(--red); margin-top: 10px;">
-                        Fortaleza – Ceará – Brasil</p>
+                        style="font-size: 2.5rem; font-weight: 900; line-height: 1.1; color: white; margin-bottom: 15px;">
+                        Ator, diretor,
+                        dramaturgo, professor e pesquisador em Artes Cênicas.</p>
                 </div>
             </div>
         </section>
@@ -817,7 +887,8 @@
                                 acadêmica e práticas pedagógicas</strong> como campos indissociáveis. Atuo no teatro
                             entendendo a cena como espaço de pensamento, rito contemporâneo e dispositivo
                             político-pedagógico.</p>
-                        <p>Desenvolvo investigações continuadas sobre <strong>mito, oralidade, tempo e ancestralidade
+                        <p>Desenvolvo investigações continuadas sobre <strong>mito, oralidade, tempo e
+                                ancestralidade
                                 afro-brasileira</strong>, com especial atenção à figura de Exu como princípio
                             dramatúrgico, filosófico e relacional. Meu trabalho se constrói em processos coletivos,
                             atravessando espetáculos, livros, ações pedagógicas e projetos audiovisuais.</p>
@@ -837,7 +908,8 @@
                         <div class="card-content">
                             <span class="card-tag">Mestrado em Artes</span>
                             <h3>UFC (2023)</h3>
-                            <p>Universidade Federal do Ceará.<br>Ênfase: teatro, pedagogia do corpo, ritual e ancestralidade.</p>
+                            <p>Universidade Federal do Ceará.<br>Ênfase: teatro, pedagogia do corpo, ritual e
+                                ancestralidade.</p>
                         </div>
                     </div>
                     <div class="card woodcut-border">
@@ -849,9 +921,9 @@
                     </div>
                     <div class="card woodcut-border">
                         <div class="card-content">
-                            <span class="card-tag">Especialização</span>
-                            <h3>UFBA (Em andamento)</h3>
-                            <p>Universidade Federal da Bahia.<br>Teatro do Oprimido.</p>
+                            <span class="card-tag">Pós-graduação em Estudos em Teatro do Oprimido</span>
+                            <h3>UFBA (2024)</h3>
+                            <p>Universidade Federal da Bahia.<br>330h cursadas.</p>
                         </div>
                     </div>
                 </div>
@@ -862,7 +934,8 @@
                         <div class="card-content">
                             <span class="card-tag">Cursos Livres</span>
                             <h3>Porto Iracema das Artes</h3>
-                            <p>Carga horária total aproximada: <strong>394 horas</strong>.<br>Inclui cursos livres e participação em laboratórios de criação.</p>
+                            <p>Carga horária total aproximada: <strong>394 horas</strong>.<br>Inclui cursos livres e
+                                participação em laboratórios de criação.</p>
                         </div>
                     </div>
                     <div class="card woodcut-border card--light">
@@ -888,7 +961,7 @@
             <div class="section-label stamped">EIXOS</div>
             <div class="catalog-grid catalog-grid--single-col">
                 <div class="card card--red-shadow">
-                    <div class="card-content card-content--large-padding">
+                    <div class="card-content">
                         <ul class="eixos-list">
                             <li>Teatro e performance</li>
                             <li>Direção e dramaturgia</li>
@@ -908,9 +981,9 @@
                 <!-- PROJETO: EXU NÃO VEM HOJE -->
                 <div class="card woodcut-border">
                     <div class="img-stack img-stack--cols-3">
-                        <img src="images/portfolio_coletivo_farol_novo/page_5_img_1.jpeg">
-                        <img src="images/portfolio_coletivo_farol_novo/page_16_img_1.jpeg">
-                        <img src="images/portfolio_rafael/page_14_img_1.jpeg">
+                        <img src="images/portfolio_coletivo_farol_novo/page_6_img_1.jpeg">
+                        <img src="images/portfolio_coletivo_farol_novo/page_13_img_1.jpeg">
+                        <img src="images/portfolio_rafael/page_14_img_3.jpeg">
                     </div>
                     <div class="card-content">
                         <span class="card-tag">ESPETÁCULO / RITO / PARTICIPAÇÃO</span>
@@ -924,6 +997,8 @@
                                 <li>Hub Cultural Porto Dragão</li>
                                 <li>Centro Cultural do Nordeste</li>
                             </ul>
+                            <a href="https://www.youtube.com/watch?v=bjwQwDCBGsI&t=108s" target="_blank"
+                                class="btn-work">Assista o Espetáculo</a>
                         </div>
                     </div>
                 </div>
@@ -931,7 +1006,7 @@
                 <!-- PROJETO: VÃO -->
                 <div class="card woodcut-border card--light">
                     <div class="img-stack img-stack--cols-2">
-                        <img src="images/portfolio_coletivo_farol_novo/page_6_img_1.jpeg">
+                        <img src="images/portfolio_coletivo_farol_novo/page_7_img_3.jpeg">
                         <img src="images/portfolio_rafael/page_15_img_2.png">
                     </div>
                     <div class="card-content">
@@ -972,6 +1047,8 @@
                             <ul class="hyphen-list">
                                 <li>Escola Porto Iracema das Artes</li>
                             </ul>
+                            <a href="https://drive.google.com/file/d/1B4qxxLZdMHsu6nY-ghGDl61jHWcjkTmW/view?usp=sharing"
+                                target="_blank" class="btn-work">Leia o Livro</a>
                         </div>
                     </div>
                 </div>
@@ -979,8 +1056,9 @@
                 <!-- PROJETO: RASTROS DE EXU -->
                 <div class="card woodcut-border">
                     <div class="img-stack">
-                        <img class="img-stack-item--fixed-height" src="images/portfolio_coletivo_farol_novo/page_14_img_1.jpeg">
-                        <img class="img-stack-item--fixed-height" src="images/portfolio_coletivo_farol_novo/page_18_img_1.jpeg">
+                        <img class="img-stack-item--fixed-height"
+                            src="images/portfolio_coletivo_farol_novo/page_18_img_1.jpeg">
+                        <img class="img-stack-item--fixed-height" src="images/portfolio_rafael/page_14_img_3.jpeg">
                     </div>
                     <div class="card-content">
                         <span class="card-tag">AUDIOVISUAL / DOCUMENTAÇÃO</span>
@@ -988,6 +1066,8 @@
                         <p class="project-desc light">
                             Série audiovisual derivada do processo do espetáculo <em>Exu Não Vem Hoje</em>.
                         </p>
+                        <a href="https://drive.google.com/file/d/1k_upXJnzO442g6ltYCLSbl6OfzqxRFFx/view?usp=sharing"
+                            target="_blank" class="btn-work">Assista a Série</a>
                     </div>
                 </div>
 
@@ -1000,7 +1080,7 @@
             <div class="catalog-grid catalog-grid--single-col gap-60">
                 <div class="card woodcut-border card--light">
                     <div class="img-stack img-stack--cols-3">
-                        <img src="images/portfolio_rafael/page_7_img_1.png">
+                        <img src="images/portfolio_rafael/page_7_img_3.png">
                         <img src="images/portfolio_rafael/page_8_img_1.png">
                         <img src="images/portfolio_rafael/page_8_img_2.png">
                     </div>
@@ -1008,20 +1088,20 @@
                         <span class="card-tag card-tag--red">REPERTÓRIO &
                             PERFORMANCE</span>
                         <h3 class="section-subtitle">Trabalhos em Destaque</h3>
-                        <div
-                            class="works-grid">
+                        <div class="works-grid">
                             <div>
-                                <p><strong>• IRREVERSÍVEL (2018)</strong><br>Direção: Andréia Pires. Grupo Bagaceira.
+                                <p><strong>• IRREVERSÍVEL (2018)</strong><br>Direção: Andréia Pires. Grupo
+                                    Bagaceira.
                                 </p>
-                                <p><strong>• REINO DE ASPAN (2018)</strong><br>Direção: Andréia Pires e Gura Moraes.</p>
+                                <p><strong>• REINO DE ASPAN (2018)</strong><br>Direção: Andréia Pires e Gura Moraes.
+                                </p>
                             </div>
                             <div>
                                 <p><strong>• SANTO BORDEL (2018)</strong><br>Direção: Andrei Bessa.</p>
                                 <p><strong>• PERFORMANCE CALOR (2019)</strong><br>V Bienal de Dança do Ceará.</p>
                             </div>
                         </div>
-                        <div class="ator-destaque-box"
-                            class="woodcut-border">
+                        <div class="ator-destaque-box woodcut-border">
                             <p class="ator-destaque-title">ATOR DESTAQUE</p>
                             <p class="ator-destaque-subtitle">Amostra Estudantil (2016) • TJA</p>
                         </div>
@@ -1036,8 +1116,8 @@
             <div class="catalog-grid catalog-grid--single-col">
                 <div class="card woodcut-border">
                     <div class="img-stack img-stack--cols-2">
-                        <img src="images/portfólio_semino_antigo/image_1.png">
-                        <img src="images/portfólio_semino_antigo/image_3.png">
+                        <img src="images/portfólio_semino_antigo/image_10.png">
+                        <img src="images/portfólio_semino_antigo/image_5.png">
                     </div>
                     <div class="card-content card-content--medium-padding">
                         <span class="card-tag">PESQUISA & CRIAÇÃO COLETIVA</span>
@@ -1045,8 +1125,7 @@
                         <p class="project-desc light">
                             Experiência centrada em processos colaborativos e dramaturgia da escuta.
                         </p>
-                        <div
-                            class="direction-grid">
+                        <div class="direction-grid">
                             <div>
                                 <h4 class="ifce-shows-title">MOSTRAS IFCE:</h4>
                                 <ul class="direction-list">
@@ -1115,15 +1194,18 @@
                 <h2 class="section-header mt-20">Projetos, Programas e Cursos Livres</h2>
                 <div class="catalog-grid catalog-grid--single-col">
                     <div class="card woodcut-border card--light">
-                     <div class="img-stack img-stack--cols-2">
+                        <div class="img-stack img-stack--cols-2">
                             <img src="images/portfolio_rafael/page_9_img_1.png">
                             <img src="images/portfolio_rafael/page_16_img_1.png">
                         </div>
                         <div class="card-content">
                             <span class="card-tag card-tag--red">Projeto ABARCA</span>
                             <h3 class="course-institution">Escola Porto Iracema das Artes</h3>
-                            <p class="course-details"><strong>Territórios de atuação:</strong> Vicente Pinzón, Genibaú, Itapipoca.</p>
-                            <p class="course-details"><strong>Disciplinas ministradas:</strong> Teatro, Dramaturgia, Construção de personagem, Jogos teatrais, Processos de criação.</p>
+                            <p class="course-details"><strong>Territórios de atuação:</strong> Vicente Pinzón,
+                                Genibaú,
+                                Itapipoca.</p>
+                            <p class="course-details"><strong>Disciplinas ministradas:</strong> Teatro, Dramaturgia,
+                                Construção de personagem, Jogos teatrais, Processos de criação.</p>
                         </div>
                     </div>
                     <div class="card woodcut-border card--light">
@@ -1137,7 +1219,7 @@
 
                 <h2 class="section-header mt-20">Formação Artística e Mediação Cultural</h2>
                 <div class="catalog-grid">
-                     <div class="card woodcut-border card--light">
+                    <div class="card woodcut-border card--light">
                         <div class="card-content">
                             <span class="card-tag">Programa de Aceleração do Idoso</span>
                             <h3>Professor</h3>
@@ -1153,13 +1235,14 @@
                     </div>
                 </div>
 
-                 <h2 class="section-header mt-20">Estágio Docente</h2>
+                <h2 class="section-header mt-20">Estágio Docente</h2>
                 <div class="catalog-grid catalog-grid--single-col">
-                     <div class="card woodcut-border card--light">
+                    <div class="card woodcut-border card--light">
                         <div class="card-content">
                             <span class="card-tag">Estágio em Teatro – Intérprete</span>
                             <h3>Noite de Alegria da Rua Trinta e Sete</h3>
-                            <p><strong>Supervisão:</strong> Professora Cícera.<br><strong>Direção:</strong> Rafael Semino.<br>Montagem final.</p>
+                            <p><strong>Supervisão:</strong> Professora Cícera.<br><strong>Direção:</strong> Rafael
+                                Semino.<br>Montagem final.</p>
                         </div>
                     </div>
                 </div>
@@ -1173,15 +1256,16 @@
             <div class="catalog-grid catalog-grid--single-col">
                 <div class="card woodcut-border">
                     <div class="img-stack img-stack--cols-3">
-                        <img src="images/portfolio_coletivo_farol_novo/page_1_img_1.jpeg">
-                        <img src="images/portfolio_coletivo_farol_novo/page_5_img_1.jpeg">
+                        <img src="images/portfolio_coletivo_farol_novo/page_3_img_1.jpeg">
+                        <img src="images/portfolio_coletivo_farol_novo/page_5_img_2.jpeg">
                         <img src="images/portfolio_coletivo_farol_novo/page_7_img_1.jpeg">
                     </div>
                     <div class="card-content card-content--large-padding">
                         <span class="card-tag">FUNDADO EM 2022</span>
                         <h3 class="coletivo-title">Coletivo Farol Novo</h3>
                         <p class="coletivo-desc">
-                            Articulação entre teatro, rito e oralidade. Pesquisa centrada na figura de Exu e poéticas
+                            Articulação entre teatro, rito e oralidade. Pesquisa centrada na figura de Exu e
+                            poéticas
                             afro-diaspóricas.
                         </p>
                         <p class="coletivo-members">
@@ -1199,7 +1283,7 @@
                 <div class="card woodcut-border card--light">
                     <div class="img-stack img-stack--cols-2">
                         <img src="images/portfolio_rafael/page_18_img_1.png">
-                        <img src="images/portfolio_rafael/page_13_img_1.png">
+                        <img src="images/portfolio_rafael/page_18_img_2.png">
                     </div>
                     <div class="card-content">
                         <span class="card-tag card-tag--red">TRANSMÍDIA</span>
@@ -1207,7 +1291,8 @@
 
                         <div class="av-project-box">
                             <h4 class="av-project-title">Rastros de Exu (2023)</h4>
-                            <p class="av-project-desc">Série audiovisual experimental derivada de processo teatral.</p>
+                            <p class="av-project-desc">Série audiovisual experimental derivada de processo teatral.
+                            </p>
                         </div>
 
                         <div class="project-details-divider">
