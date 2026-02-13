@@ -367,6 +367,8 @@
                 align-items: flex-start;
                 gap: 20px;
                 padding: 30px 40px;
+                position: static;
+                /* Prevent overlap with sticky section labels on mobile */
             }
 
             .nav-meta {
@@ -380,9 +382,25 @@
             }
 
             .section-label {
-                font-size: 15vw;
-                position: static;
-                margin-bottom: 40px;
+                font-size: 10vw;
+                position: sticky;
+                top: 0;
+                width: calc(100% + 80px);
+                /* Account for section padding */
+                margin: -80px -40px 40px -40px;
+                padding: 20px;
+                height: auto;
+                writing-mode: horizontal-tb;
+                transform: none;
+                background: rgba(255, 255, 255, 0.9);
+                backdrop-filter: blur(10px);
+                border-bottom: 4px solid var(--black);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 50;
+                pointer-events: auto;
+                letter-spacing: -2px;
             }
 
             .hero {
